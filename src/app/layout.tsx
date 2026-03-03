@@ -10,6 +10,8 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ServiceWorkerRegistrar } from "@/components/sw-registrar";
 import { LocaleDirectionProvider } from "@/components/locale-direction-provider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   preload: true,
@@ -90,6 +92,8 @@ export default function RootLayout({
         </NuqsAdapter>
       </body>
       <GoogleAnalytics gaId="G-GHG1HN9493" />
+      <SpeedInsights />
+      <Analytics />
     </html>
   );
 }
