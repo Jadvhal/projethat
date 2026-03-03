@@ -93,7 +93,8 @@ export default function GroupPage({ id, page }: GroupPageProps) {
     !!group?.contact_email ||
     !!group?.mangaupdates;
 
-  const totalPages = Math.ceil((data?.total ?? 0) / LIMIT);
+  const maxAllowedPage = Math.floor(10000 / LIMIT);
+  const totalPages = Math.min(Math.ceil((data?.total ?? 0) / LIMIT), maxAllowedPage);
 
   function renderMangaResults() {
     if (!isMounted() || isLoading)

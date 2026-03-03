@@ -59,7 +59,8 @@ export default function GroupsSearch() {
     refetchOnWindowFocus: false,
   });
 
-  const totalPages = Math.ceil((data?.total ?? 0) / LIMIT);
+  const maxAllowedPage = Math.floor(10000 / LIMIT);
+  const totalPages = Math.min(Math.ceil((data?.total ?? 0) / LIMIT), maxAllowedPage);
 
   const handleClear = () => {
     setInputValue("");
@@ -159,7 +160,7 @@ export default function GroupsSearch() {
             const params = new URLSearchParams();
             if (debouncedQuery) params.set("q", debouncedQuery);
             if (p > 1) params.set("page", String(p));
-            return `/groups${params.size ? `?${params}` : ""}`;  
+            return `/groups${params.size ? `?${params}` : ""}`;
           }}
           className="mt-4"
         />

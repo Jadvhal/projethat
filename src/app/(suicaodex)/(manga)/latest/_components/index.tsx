@@ -81,7 +81,8 @@ export default function Latest({ page }: LatestProps) {
       </Empty>
     );
 
-  const totalPages = Math.ceil((data.total ?? 0) / LIMIT);
+  const maxAllowedPage = Math.floor(10000 / LIMIT);
+  const totalPages = Math.min(Math.ceil((data.total ?? 0) / LIMIT), maxAllowedPage);
 
   return (
     <>

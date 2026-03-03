@@ -259,7 +259,8 @@ export default function WeebdexAdvancedSearch() {
 
   const mangaData = response?.status === 200 ? response.data : null;
   const isApiError = response?.status !== undefined && response.status !== 200;
-  const totalPages = Math.ceil((mangaData?.total ?? 0) / LIMIT);
+  const maxAllowedPage = Math.floor(10000 / LIMIT);
+  const totalPages = Math.min(Math.ceil((mangaData?.total ?? 0) / LIMIT), maxAllowedPage);
 
   // ── Handlers ───────────────────────────────────────────────────────────────
 
@@ -682,79 +683,79 @@ export default function WeebdexAdvancedSearch() {
                   {/* tmod / txmod — only shown when relevant tags are selected */}
                   {(includedTagsDraft.length > 0 ||
                     excludedTagsDraft.length > 0) && (
-                    <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-                      {includedTagsDraft.length > 0 && (
-                        <div className="flex items-center flex-wrap gap-2">
-                          <span className="text-muted-foreground uppercase font-medium">
-                            include:
-                          </span>
-                          {(["AND", "OR"] as const).map((v) => (
-                            <button
-                              key={v}
-                              type="button"
-                              onClick={() => setSelectedTmod(v)}
-                              className={cn(
-                                "flex items-center gap-1.5 cursor-pointer select-none transition-colors",
-                                (selectedTmod ?? "AND") === v
-                                  ? "text-foreground font-medium"
-                                  : "text-muted-foreground hover:text-foreground",
-                              )}
-                            >
-                              <span
+                      <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                        {includedTagsDraft.length > 0 && (
+                          <div className="flex items-center flex-wrap gap-2">
+                            <span className="text-muted-foreground uppercase font-medium">
+                              include:
+                            </span>
+                            {(["AND", "OR"] as const).map((v) => (
+                              <button
+                                key={v}
+                                type="button"
+                                onClick={() => setSelectedTmod(v)}
                                 className={cn(
-                                  "inline-flex size-3.5 rounded-full border-2 items-center justify-center shrink-0",
+                                  "flex items-center gap-1.5 cursor-pointer select-none transition-colors",
                                   (selectedTmod ?? "AND") === v
-                                    ? "border-green-500"
-                                    : "border-muted-foreground/40",
+                                    ? "text-foreground font-medium"
+                                    : "text-muted-foreground hover:text-foreground",
                                 )}
                               >
-                                {(selectedTmod ?? "AND") === v && (
-                                  <span className="size-1.5 rounded-full bg-green-500" />
-                                )}
-                              </span>
-                              {v === "AND"
-                                ? "All (AND)"
-                                : "At least one (OR)"}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                      {excludedTagsDraft.length > 0 && (
-                        <div className="flex items-center flex-wrap gap-2">
-                          <span className="text-muted-foreground uppercase font-medium">
-                            exclude:
-                          </span>
-                          {(["OR", "AND"] as const).map((v) => (
-                            <button
-                              key={v}
-                              type="button"
-                              onClick={() => setSelectedTxmod(v)}
-                              className={cn(
-                                "flex items-center gap-1.5 cursor-pointer select-none transition-colors",
-                                (selectedTxmod ?? "OR") === v
-                                  ? "text-foreground font-medium"
-                                  : "text-muted-foreground hover:text-foreground",
-                              )}
-                            >
-                              <span
+                                <span
+                                  className={cn(
+                                    "inline-flex size-3.5 rounded-full border-2 items-center justify-center shrink-0",
+                                    (selectedTmod ?? "AND") === v
+                                      ? "border-green-500"
+                                      : "border-muted-foreground/40",
+                                  )}
+                                >
+                                  {(selectedTmod ?? "AND") === v && (
+                                    <span className="size-1.5 rounded-full bg-green-500" />
+                                  )}
+                                </span>
+                                {v === "AND"
+                                  ? "All (AND)"
+                                  : "At least one (OR)"}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                        {excludedTagsDraft.length > 0 && (
+                          <div className="flex items-center flex-wrap gap-2">
+                            <span className="text-muted-foreground uppercase font-medium">
+                              exclude:
+                            </span>
+                            {(["OR", "AND"] as const).map((v) => (
+                              <button
+                                key={v}
+                                type="button"
+                                onClick={() => setSelectedTxmod(v)}
                                 className={cn(
-                                  "inline-flex size-3.5 rounded-full border-2 items-center justify-center shrink-0",
+                                  "flex items-center gap-1.5 cursor-pointer select-none transition-colors",
                                   (selectedTxmod ?? "OR") === v
-                                    ? "border-red-500"
-                                    : "border-muted-foreground/40",
+                                    ? "text-foreground font-medium"
+                                    : "text-muted-foreground hover:text-foreground",
                                 )}
                               >
-                                {(selectedTxmod ?? "OR") === v && (
-                                  <span className="size-1.5 rounded-full bg-red-500" />
-                                )}
-                              </span>
-                              {v === "OR" ? "Any (OR)" : "All (AND)"}
-                            </button>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
+                                <span
+                                  className={cn(
+                                    "inline-flex size-3.5 rounded-full border-2 items-center justify-center shrink-0",
+                                    (selectedTxmod ?? "OR") === v
+                                      ? "border-red-500"
+                                      : "border-muted-foreground/40",
+                                  )}
+                                >
+                                  {(selectedTxmod ?? "OR") === v && (
+                                    <span className="size-1.5 rounded-full bg-red-500" />
+                                  )}
+                                </span>
+                                {v === "OR" ? "Any (OR)" : "All (AND)"}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
                 </div>
               </CollapsibleContent>
             </div>
