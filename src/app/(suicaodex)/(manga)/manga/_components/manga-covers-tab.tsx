@@ -123,7 +123,7 @@ export default function MangaCoversTab({ id }: MangaCoversTabProps) {
                   "block! rounded-sm object-cover w-full",
                   !loaded && "aspect-5/7",
                 )}
-                placeholderSrc="/images/place-doro.webp"
+                placeholderSrc={undefined}
                 className={cn(
                   "w-full rounded-sm block object-cover aspect-5/7",
                 )}

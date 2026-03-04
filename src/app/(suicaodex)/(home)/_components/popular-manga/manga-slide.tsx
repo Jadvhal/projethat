@@ -72,7 +72,7 @@ export default function MangaSlide({ manga }: MangaSlideProps) {
             manga_id={manga.id || ""}
             cover={manga.relationships?.cover}
             alt={title}
-            placeholder="/images/place-doro.webp"
+            placeholder={undefined}
             className="shadow-md drop-shadow-md aspect-7/10 object-cover!"
             wrapper="w-[130px] md:w-[200px] lg:w-[215px] h-auto"
             preload={true}

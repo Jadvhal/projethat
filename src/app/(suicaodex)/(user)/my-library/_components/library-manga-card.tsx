@@ -31,7 +31,7 @@ export default function LibraryMangaCard({
         <div className="relative">
           <LazyLoadImage
             wrapperClassName="block! w-full aspect-5/7"
-            placeholderSrc="/images/place-doro.webp"
+            placeholderSrc={undefined}
             className="w-full h-auto aspect-5/7 object-cover rounded-sm"
             src={coverUrl}
             alt={`Ảnh bìa ${title}`}

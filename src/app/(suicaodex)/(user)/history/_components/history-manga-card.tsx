@@ -40,7 +40,7 @@ export default function HistoryMangaCard({
   const { title, coverId } = meta;
   const coverUrl = coverId
     ? `${siteConfig.weebdex.proxyURL}/covers/${mangaId}/${coverId}.256.webp`
-    : "/images/place-doro.webp";
+    : "/images/xidoco.webp";
 
   const slug = generateSlug(title);
   const mangaHref = `/manga/${mangaId}/${slug}`;

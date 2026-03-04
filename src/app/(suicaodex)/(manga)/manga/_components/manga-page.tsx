@@ -150,7 +150,7 @@ export default function MangaPage({ id, initData }: PageProps) {
               manga_id={id}
               cover={manga.relationships?.cover}
               alt={title}
-              placeholder="/images/place-doro.webp"
+              placeholder={undefined}
               className="shadow-md drop-shadow-md"
               wrapper="w-[130px] md:w-[200px] h-auto"
               isExpandable

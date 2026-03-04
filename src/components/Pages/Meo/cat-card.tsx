@@ -13,7 +13,7 @@ export function CatCard({ cat }: CatCardProps) {
       <CardContent className="relative p-0 rounded-sm">
         <LazyLoadImage
           wrapperClassName="block! rounded-sm object-cover w-full h-full"
-          placeholderSrc="/images/place-doro.webp"
+          placeholderSrc={undefined}
           className="h-auto w-full rounded-sm block object-cover aspect-5/7"
           src={getCatImageUrl(cat.id, { width: 400, height: 400 })}
           alt={`Ảnh bìa ${cat.id}`}

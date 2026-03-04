@@ -67,7 +67,7 @@ export function Hover3DCard({
       }}
     >
       <img
-        src={imageSrc || "/images/place-doro.webp"}
+        src={imageSrc}
         alt={alt}
         className="block h-full w-full object-cover"
         draggable={false}

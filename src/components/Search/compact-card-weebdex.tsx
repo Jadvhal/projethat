@@ -27,7 +27,7 @@ export default function CompactCardWeebdex({ manga }: CompactCardWeebdexProps) {
           wrapperClassName="block! shrink-0"
           src={coverUrl}
           alt={title}
-          placeholderSrc="/images/place-doro.webp"
+          placeholderSrc={undefined}
           className="w-20! h-auto! aspect-5/7 object-cover! rounded-sm border"
           onError={(e) => {
             e.currentTarget.src = "/images/xidoco.webp";

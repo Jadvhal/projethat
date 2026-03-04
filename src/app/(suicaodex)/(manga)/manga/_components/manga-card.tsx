@@ -39,7 +39,7 @@ export default function MangaCard({
             "block! rounded-sm object-cover w-full h-full",
             !loaded && "aspect-5/7",
           )}
-          placeholderSrc="/images/place-doro.webp"
+          placeholderSrc={undefined}
           className={cn(
             "h-auto w-full rounded-sm block object-cover aspect-5/7",
           )}

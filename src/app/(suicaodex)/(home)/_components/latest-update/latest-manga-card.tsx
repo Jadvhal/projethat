@@ -41,7 +41,7 @@ export default function LatestMangaCard({ chapter }: LatestMangaCardProps) {
             wrapperClassName="block! w-full h-full absolute inset-0"
             src={coverUrl}
             alt={title}
-            placeholderSrc="/images/place-doro.webp"
+            placeholderSrc={undefined}
             className="w-full h-full object-cover"
             onError={(e) => {
               e.currentTarget.src = "/images/xidoco.webp";
@@ -98,7 +98,7 @@ export default function LatestMangaCard({ chapter }: LatestMangaCardProps) {
               className="flex items-center gap-1 text-xs font-light"
               dateTime={chapter.updated_at}
             >
-              <Clock size={16} className="shrink-0"/>
+              <Clock size={16} className="shrink-0" />
               <span className="px-0.5 line-clamp-1 break-all">
                 {chapter.updated_at
                   ? formatTimeToNow(new Date(chapter.updated_at))
