@@ -47,6 +47,13 @@ const nextConfig: NextConfig = {
         pathname: "/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "wd.memaydex.online",
+        port: "",
+        pathname: "/covers/**",
+        search: "",
+      },
     ],
   },
   allowedDevOrigins: ["*.suicaodex.com"],

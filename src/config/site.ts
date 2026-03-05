@@ -16,7 +16,7 @@ export const siteConfig = {
   weebdex: {
     domain: "https://weebdex.org",
     ogURL: "https://og.weebdex.org",
-    proxyURL: "http://localhost:3637",
+    proxyURL: "https://wd.memaydex.online",
   },
 };
 
