@@ -21,21 +21,21 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.mangahat.com",
+        hostname: "api.suicaodex.com",
         port: "",
         pathname: "/covers/**",
         search: "",
       },
       {
         protocol: "https",
-        hostname: "api2.mangahat.com",
+        hostname: "api2.suicaodex.com",
         port: "",
         pathname: "/covers/**",
         search: "",
       },
       {
         protocol: "https",
-        hostname: "clf.mangahat.com",
+        hostname: "clf.suicaodex.com",
         port: "",
         pathname: "/covers/**",
         search: "",
@@ -49,7 +49,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  allowedDevOrigins: ["*.mangahat.com"],
+  allowedDevOrigins: ["*.suicaodex.com"],
   rewrites: async () => [
     {
       source: "/manga-sitemap.xml",

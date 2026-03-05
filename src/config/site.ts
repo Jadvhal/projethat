@@ -9,9 +9,9 @@ export const siteConfig = {
     facebook: "https://facebook.com/mangahat",
   },
   mangahat: {
-    domain: "https://mangahat.com",
-    mato_domain: "https://mato.mangahat.com",
-    apiURL: "https://api2.mangahat.com", //pls use your own proxy server; or use built-in proxy, see /lib/axios.ts
+    domain: "https://suicaodex.com",
+    mato_domain: "https://mato.suicaodex.com",
+    apiURL: "https://api2.suicaodex.com", //pls use your own proxy server; or use built-in proxy, see /lib/axios.ts
   },
   weebdex: {
     domain: "https://weebdex.org",
