@@ -72,7 +72,7 @@
 
 
 // export function getCurrentApiUrl(): string {
-//   return currentWorkingApiUrl || siteConfig.suicaodex.apiURL;
+//   return currentWorkingApiUrl || siteConfig.MangaHat.apiURL;
 // }
 
 // export function setCurrentApiUrl(url: string): void {

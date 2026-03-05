@@ -307,7 +307,7 @@ export default function MangaDetails({ id, initialData }: MangaDetailsProps) {
                       asChild
                     >
                       <NoPrefetchLink
-                        href={siteConfig.suicaodex.mato_domain}
+                        href={siteConfig.MangaHat.mato_domain}
                         target="_blank"
                       >
                         <SquareArrowOutUpRightIcon />

@@ -3,9 +3,9 @@ import { Metadata } from "next";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Thể loại - SuicaoDex",
+    title: "Thể loại - MangaHat",
     description: "Truyện theo thể loại",
-    keywords: ["Thể loại", "Genre", "SuicaoDex"],
+    keywords: ["Thể loại", "Genre", "MangaHat"],
   };
 }
 

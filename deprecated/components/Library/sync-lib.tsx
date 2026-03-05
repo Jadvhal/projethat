@@ -1,7 +1,7 @@
 "use client";
 
 import { getMangasByIDs } from "@/lib/mangadex/history";
-import { getUserLibrary } from "@/lib/suicaodex/db";
+import { getUserLibrary } from "@/lib/mangahat/db";
 import { Manga } from "@/types/types";
 import {
   Album,

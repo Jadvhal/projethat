@@ -40,7 +40,7 @@ import { toast } from "sonner";
 import { useLocalLibrary } from "@/hooks/use-local-library";
 import { useLocalNotification } from "@/hooks/use-local-notification";
 import { useSession } from "next-auth/react";
-import { updateMangaCategory } from "@/lib/suicaodex/db";
+import { updateMangaCategory } from "@/lib/mangahat/db";
 
 interface AddToLibraryBtnProps {
   manga: Manga;

@@ -15,8 +15,8 @@ export async function generateMetadata({
   return {
     title:
       page === 1
-        ? "Mới cập nhật - SuicaoDex"
-        : `Trang ${page} - Mới cập nhật - SuicaoDex`,
+        ? "Mới cập nhật - MangaHat"
+        : `Trang ${page} - Mới cập nhật - MangaHat`,
     description: "Manga mới cập nhật",
     keywords: ["Mới cập nhật", "Manga"],
   };

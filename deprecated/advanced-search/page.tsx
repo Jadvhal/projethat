@@ -15,15 +15,15 @@ export async function generateMetadata({
   return {
     title:
       page === 1
-        ? "Tìm kiếm nâng cao - SuicaoDex"
-        : `Trang ${page} - Tìm kiếm nâng cao - SuicaoDex`,
+        ? "Tìm kiếm nâng cao - MangaHat"
+        : `Trang ${page} - Tìm kiếm nâng cao - MangaHat`,
     description: "Công cụ tìm kiếm nâng cao",
     keywords: [
       "Tìm kiếm nâng cao",
       "Nâng cao",
       "Tìm kiếm",
       "Manga",
-      "SuicaoDex",
+      "MangaHat",
     ],
   };
 }

@@ -1,5 +1,5 @@
 // const RSS_URL = "https://mdrss.tijlvdb.me/feed";
-// const SCD_RSS_URL = "https://cors.iamneyk.workers.dev/?url=https://git.suicaodex.com/rss";
+// const SCD_RSS_URL = "https://cors.iamneyk.workers.dev/?url=https://git.MangaHat.com/rss";
 // import Parser from 'rss-parser';
 
 // export async function fetchRssFeedByIds(ids:string[]) {

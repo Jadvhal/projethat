@@ -1,6 +1,6 @@
 import { useLocalLibrary } from "@/hooks/use-local-library";
 import { useLocalNotification } from "@/hooks/use-local-notification";
-import { getMangaCategory, updateMangaCategory } from "@/lib/suicaodex/db";
+import { getMangaCategory, updateMangaCategory } from "@/lib/mangahat/db";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -83,64 +83,64 @@ function ReaderSettingsDialog() {
     label: string;
     icon: React.ReactNode;
   }[] = [
-    {
-      value: "long-strip",
-      label: READER_MODE_LABELS["long-strip"],
-      icon: <GalleryVertical />,
-    },
-    {
-      value: "single",
-      label: READER_MODE_LABELS["single"],
-      icon: <FileInput />,
-    },
-    {
-      value: "double",
-      label: READER_MODE_LABELS["double"],
-      icon: <BookOpen />,
-    },
-    {
-      value: "single-rtl",
-      label: READER_MODE_LABELS["single-rtl"],
-      icon: <FileOutput />,
-    },
-  ];
+      {
+        value: "long-strip",
+        label: READER_MODE_LABELS["long-strip"],
+        icon: <GalleryVertical />,
+      },
+      {
+        value: "single",
+        label: READER_MODE_LABELS["single"],
+        icon: <FileInput />,
+      },
+      {
+        value: "double",
+        label: READER_MODE_LABELS["double"],
+        icon: <BookOpen />,
+      },
+      {
+        value: "single-rtl",
+        label: READER_MODE_LABELS["single-rtl"],
+        icon: <FileOutput />,
+      },
+    ];
 
   const imageScales: {
     value: ImageScale;
     label: string;
     icon: React.ReactNode;
   }[] = [
-    {
-      value: "original",
-      label: IMAGE_SCALE_LABELS["original"],
-      icon: <Image />,
-    },
-    {
-      value: "limit-all",
-      label: IMAGE_SCALE_LABELS["limit-all"],
-      icon: <Wallpaper />,
-    },
-    {
-      value: "limit-width",
-      label: IMAGE_SCALE_LABELS["limit-width"],
-      icon: <SquareSplitHorizontal />,
-    },
-    {
-      value: "limit-height",
-      label: IMAGE_SCALE_LABELS["limit-height"],
-      icon: <SquareSplitVertical />,
-    },
-    {
-      value: "stretch-width",
-      label: IMAGE_SCALE_LABELS["stretch-width"],
-      icon: <MoveHorizontal />,
-    },
-    {
-      value: "stretch-height",
-      label: IMAGE_SCALE_LABELS["stretch-height"],
-      icon: <MoveVertical />,
-    },
-  ];
+      {
+        value: "original",
+        label: IMAGE_SCALE_LABELS["original"],
+        icon: <Image />,
+      },
+      {
+        value: "limit-all",
+        label: IMAGE_SCALE_LABELS["limit-all"],
+        icon: <Wallpaper />,
+      },
+      {
+        value: "limit-width",
+        label: IMAGE_SCALE_LABELS["limit-width"],
+        icon: <SquareSplitHorizontal />,
+      },
+      {
+        value: "limit-height",
+        label: IMAGE_SCALE_LABELS["limit-height"],
+        icon: <SquareSplitVertical />,
+      },
+      {
+        value: "stretch-width",
+        label: IMAGE_SCALE_LABELS["stretch-width"],
+        icon: <MoveHorizontal />,
+      },
+      {
+        value: "stretch-height",
+        label: IMAGE_SCALE_LABELS["stretch-height"],
+        icon: <MoveVertical />,
+      },
+    ];
 
   return (
     <Dialog>
@@ -159,7 +159,7 @@ function ReaderSettingsDialog() {
         </DialogHeader>
 
         <div className="grid grid-cols-1 gap-3 transition-all duration-300">
-          {/* Mode đọc */}
+          {/* Reading mode */}
           <div className="space-y-1.5">
             <Label className="font-semibold">Reading Mode</Label>
             <div className="grid grid-cols-2 gap-2">
@@ -214,7 +214,7 @@ function ReaderSettingsDialog() {
           {/* Spread offset (only shows in double) */}
           {mode === "double" && (
             <div className="space-y-1.5">
-              <Label className="font-semibold">Offset 2 trang (0-3)</Label>
+              <Label className="font-semibold">Offset 2 pages (0-3)</Label>
               <div className="flex gap-2">
                 <Input
                   type="number"

@@ -66,7 +66,7 @@ export default function DoublePage({
           >
             <MangaImage
               page={pages[idx]}
-              alt={`Trang ${idx + 1}`}
+              alt={`Page ${idx + 1}`}
               onRetry={() => retry(idx)}
               isDouble={isDouble}
             />

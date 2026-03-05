@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { serializeComment } from "@/lib/suicaodex/serializers";
+import { serializeComment } from "@/lib/mangahat/serializers";
 import { limiter, RateLimitError } from "@/lib/rate-limit";
 
 export async function GET(req: NextRequest) {

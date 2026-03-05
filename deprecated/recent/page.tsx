@@ -14,10 +14,10 @@ export async function generateMetadata({
   return {
     title:
       page === 1
-        ? "Truyện mới - SuicaoDex"
-        : `Trang ${page} - Truyện mới - SuicaoDex`,
+        ? "Truyện mới - MangaHat"
+        : `Trang ${page} - Truyện mới - MangaHat`,
     description: "Truyện mới, Manga mới nhất, Manga mới cập nhật",
-    keywords: ["Truyện mới", "Manga", "SuicaoDex"],
+    keywords: ["Truyện mới", "Manga", "MangaHat"],
   };
 }
 export default async function Page({ searchParams }: pageProps) {

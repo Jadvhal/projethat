@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 import { Manga } from "@/lib/weebdex/model";
 import { parseMangaTitle } from "@/lib/weebdex/utils";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { StatusTag } from "@/app/(suicaodex)/(manga)/manga/_components/manga-tags";
+import { StatusTag } from "@/app/(mangahat)/(manga)/manga/_components/manga-tags";
 import { Streamdown } from "streamdown";
 import { ScrollArea } from "@/components/ui/scroll-area";
 

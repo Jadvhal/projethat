@@ -14,7 +14,7 @@ interface LongStripProps {
 
 export default function LongStrip({ pages, retry, onCurrentIndexChange }: LongStripProps) {
   const imageGap = useReaderStore((s) => s.imageGap);
-  const itemRefs   = useRef<Map<number, HTMLElement>>(new Map());
+  const itemRefs = useRef<Map<number, HTMLElement>>(new Map());
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   // IntersectionObserver - track page currently most visible
@@ -41,7 +41,7 @@ export default function LongStrip({ pages, retry, onCurrentIndexChange }: LongSt
     observerRef.current = observer;
     itemRefs.current.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const registerRef = (index: number, el: HTMLElement | null) => {
@@ -67,7 +67,7 @@ export default function LongStrip({ pages, retry, onCurrentIndexChange }: LongSt
         >
           <MangaImage
             page={page}
-            alt={`Trang ${index + 1}`}
+            alt={`Page ${index + 1}`}
             onRetry={() => retry(index)}
           />
         </div>

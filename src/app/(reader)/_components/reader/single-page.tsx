@@ -43,7 +43,7 @@ export default function SinglePage({
       </span>
       <MangaImage
         page={page}
-        alt={`Trang ${currentIndex + 1}`}
+        alt={`Page ${currentIndex + 1}`}
         onRetry={() => retry(currentIndex)}
       />
     </div>

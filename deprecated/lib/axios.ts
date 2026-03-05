@@ -6,7 +6,7 @@
 
 // const axiosInstance = axios.create({
 //   //baseURL: NEXT_BASE_URL + "/api/mangadex", // uncomment this line and above if you want to use built-in proxy
-//   baseURL: siteConfig.suicaodex.apiURL,
+//   baseURL: siteConfig.MangaHat.apiURL,
 // });
 
 // export default axiosInstance;
@@ -16,23 +16,23 @@ import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 import { setCurrentApiUrl, getCurrentImageProxyUrl, setCurrentImageProxyUrl } from "../../src/lib/utils";
 
 const proxyGroup1 = [
-  "https://api2.suicaodex.com",
-  // "https://api.suicaodex.com",
+  "https://api2.MangaHat.com",
+  // "https://api.MangaHat.com",
 ];
 
 const proxyGroup2 = [
   "https://pr.memaydex.online",
   "https://proxy.bltx.workers.dev",
-  "https://clf.suicaodex.com",
+  "https://clf.MangaHat.com",
 ];
 
 const proxyList = [
   // process.env.NEXT_PUBLIC_PROXY_URL as string, // pls use your own proxy
   "https://pr.memaydex.online",
-  "https://api2.suicaodex.com",
+  "https://api2.MangaHat.com",
   "https://proxy.bltx.workers.dev",
-  // "https://api.suicaodex.com",
-  "https://clf.suicaodex.com",
+  // "https://api.MangaHat.com",
+  "https://clf.MangaHat.com",
 ];
 
 let lastSuccessfulProxyIndex = 0;

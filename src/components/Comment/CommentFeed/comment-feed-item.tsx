@@ -1,6 +1,6 @@
 // "use client";
 import { Card } from "@/components/ui/card";
-import { CommentWithUser } from "@/lib/suicaodex/serializers";
+import { CommentWithUser } from "@/lib/mangahat/serializers";
 import { Streamdown } from "streamdown";
 import NoPrefetchLink from "@/components/Custom/no-prefetch-link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";

@@ -9,9 +9,9 @@ interface pageProps {
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Nhóm dịch - SuicaoDex",
+    title: "Nhóm dịch - MangaHat",
     // description: "Nhóm dịch",
-    // keywords: ["Nhóm dịch", "SuicaoDex"],
+    // keywords: ["Nhóm dịch", "MangaHat"],
   };
 }
 export default async function Page({ searchParams }: pageProps) {

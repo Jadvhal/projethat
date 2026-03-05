@@ -4,7 +4,7 @@ import withSerwistInit from "@serwist/next";
 const withSerwist = withSerwistInit({
   swSrc: "src/sw.ts",
   swDest: "public/sw.js",
-  // Chỉ bật SW khi build production
+  // Only enable SW in production builds
   disable: process.env.NODE_ENV === "development",
 });
 
@@ -20,21 +20,21 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "api.suicaodex.com",
+        hostname: "api.mangahat.com",
         port: "",
         pathname: "/covers/**",
         search: "",
       },
       {
         protocol: "https",
-        hostname: "api2.suicaodex.com",
+        hostname: "api2.mangahat.com",
         port: "",
         pathname: "/covers/**",
         search: "",
       },
       {
         protocol: "https",
-        hostname: "clf.suicaodex.com",
+        hostname: "clf.mangahat.com",
         port: "",
         pathname: "/covers/**",
         search: "",
@@ -48,7 +48,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  allowedDevOrigins: ["*.suicaodex.com"],
+  allowedDevOrigins: ["*.mangahat.com"],
   rewrites: async () => [
     {
       source: "/manga-sitemap.xml",

@@ -9,7 +9,7 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: process.env.MYSQL_DATABASE_URL || `mysql://${process.env.MYSQL_DATABASE_USER || 'root'}:${process.env.MYSQL_DATABASE_PASSWORD || 'password'}@${process.env.MYSQL_DATABASE_HOST || 'localhost'}:${process.env.MYSQL_DATABASE_PORT || '3306'}/${process.env.MYSQL_DATABASE_NAME || 'suicaodex'}`,
+    url: process.env.MYSQL_DATABASE_URL || `mysql://${process.env.MYSQL_DATABASE_USER || 'root'}:${process.env.MYSQL_DATABASE_PASSWORD || 'password'}@${process.env.MYSQL_DATABASE_HOST || 'localhost'}:${process.env.MYSQL_DATABASE_PORT || '3306'}/${process.env.MYSQL_DATABASE_NAME || 'mangahat'}`,
     shadowDatabaseUrl: process.env.SHADOW_DATABASE_URL,
   },
 });
