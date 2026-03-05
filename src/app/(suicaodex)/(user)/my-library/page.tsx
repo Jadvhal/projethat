@@ -32,7 +32,7 @@ export function generateMetadata(): Metadata {
   return {
     title: "Library",
     // description: "Library",
-    // keywords: ["History", "SuicaoDex"],
+    // keywords: ["History", "MangaHat"],
   };
 }
 export default async function Page() {

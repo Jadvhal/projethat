@@ -23,7 +23,7 @@ const inter = Inter({
 // });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://suicaodex.com"),
+  metadataBase: new URL("https://mangahat.com"),
   title: {
     template: "%s - MangaHat",
     default: siteConfig.name,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   openGraph: {
     type: "website",
-    url: "https://suicaodex.com/",
+    url: "https://mangahat.com/",
     siteName: "MangaHat",
     title: siteConfig.name,
     description: siteConfig.description,

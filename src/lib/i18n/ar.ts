@@ -268,7 +268,7 @@ export const ar: TranslationKeys = {
         clearAll: "مسح الكل",
     },
     site: {
-        description: "SuicaoDex - تطبيق قراءة المانجا",
+        description: "MangaHat - تطبيق قراءة المانجا",
         manifestDescription: "تطبيق قراءة المانجا",
         pageWanderedOff: "هذه الصفحة ضلّت طريقها",
     },

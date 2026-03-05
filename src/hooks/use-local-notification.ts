@@ -124,12 +124,12 @@ export function useLocalNotification() {
     return localNotification.unread.includes(id);
   };
 
-  // Clear all thông báo
+  // Clear all notifications
   const clearAllLocalNotifications = () => {
     setLocalNotification({ ids: [], shown: [], unread: [] });
   };
 
-  // Clear all trạng thái đã xem
+  // Clear all shown status
   const clearAllShownStatus = () => {
     setLocalNotification(current => ({
       ...current,

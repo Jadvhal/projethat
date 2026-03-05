@@ -1,17 +1,17 @@
 export const siteConfig = {
   name: "MangaHat",
-  url: "https://suicaodex.com",
-  ogImage: "https://suicaodex.com/og-image.png",
+  url: "https://mangahat.com",
+  ogImage: "https://mangahat.com/og-image.png",
   description: "MangaHat - Manga reading web app",
   links: {
     discord: "https://discord.gg/dongmoe",
-    github: "https://github.com/TNTKien/better-suicaodex",
-    facebook: "https://facebook.com/suicaodex",
+    github: "https://github.com/Jadvhal/projethat",
+    facebook: "https://facebook.com/mangahat",
   },
-  suicaodex: {
-    domain: "https://suicaodex.com",
-    mato_domain: "https://mato.suicaodex.com",
-    apiURL: "https://api2.suicaodex.com", //pls use your own proxy server; or use built-in proxy, see /lib/axios.ts
+  mangahat: {
+    domain: "https://mangahat.com",
+    mato_domain: "https://mato.mangahat.com",
+    apiURL: "https://api2.mangahat.com", //pls use your own proxy server; or use built-in proxy, see /lib/axios.ts
   },
   weebdex: {
     domain: "https://weebdex.org",

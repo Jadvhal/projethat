@@ -131,7 +131,7 @@ export function StickerPicker({
               Suggest a new sticker{" "}
               <a
                 className="text-primary underline"
-                href="https://github.com/TNTKien/better-suicaodex/discussions/36"
+                href="https://github.com/Jadvhal/projethat/discussions"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -164,7 +164,7 @@ export function StickerPicker({
             Suggest a new sticker{" "}
             <a
               className="text-primary underline"
-              href="https://github.com/TNTKien/better-suicaodex/discussions/36"
+              href="https://github.com/Jadvhal/projethat/discussions"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -301,7 +301,7 @@ export const en = {
 
   // ── Site ────────────────────────────────────────────────────────
   site: {
-    description: "SuicaoDex - Manga reading web app",
+    description: "MangaHat - Manga reading web app",
     manifestDescription: "Manga reading app",
     pageWanderedOff: "This page has wandered off",
   },

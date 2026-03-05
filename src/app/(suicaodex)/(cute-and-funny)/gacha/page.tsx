@@ -4,8 +4,8 @@ import { Metadata } from "next";
 export function generateMetadata(): Metadata {
   return {
     title: "Gacha Simulator",
-    description: "SuicaoDex88 - The leading gacha house in VN",
-    keywords: ["Gacha", "SuicaoDex", "Blue Archive", "Pokemon TCG", "Honkai Star Rail"],
+    description: "MangaHat - The ultimate gacha simulator",
+    keywords: ["Gacha", "MangaHat", "Blue Archive", "Pokemon TCG", "Honkai Star Rail"],
   };
 }
 

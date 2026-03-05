@@ -28,7 +28,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const data = {
     user: {
       name: "Dorothy",
-      email: "doro@suicaodex.com",
+      email: "doro@mangahat.com",
       image: "/avatars/doro_think.webp",
     },
 
@@ -84,7 +84,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         items: [
           {
             title: t.nav.forum,
-            url: "https://github.com/TNTKien/better-suicaodex/discussions",
+            url: "https://github.com/Jadvhal/projethat/discussions",
           },
           {
             title: t.nav.scanlationGroups,

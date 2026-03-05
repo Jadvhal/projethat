@@ -106,7 +106,7 @@ export function formatShortTime(date: Date | number): string {
 let currentImageProxyUrl: string | null = null;
 
 export function getCurrentImageProxyUrl(): string {
-  return currentImageProxyUrl || siteConfig.suicaodex.apiURL;
+  return currentImageProxyUrl || siteConfig.mangahat.apiURL;
 }
 
 export function getCoverImageUrl(

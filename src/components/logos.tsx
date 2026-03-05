@@ -7,7 +7,7 @@ import ShanHaiJing from "#/images/logo/shanhaijing.webp";
 import SRT from "#/images/logo/srt.webp";
 import Trinity from "#/images/logo/trinity.webp";
 import Valkyrie from "#/images/logo/valkyrie.webp";
-import SuicaoDex from "#/suicaodex.webp";
+import MangaHat from "#/suicaodex.webp";
 import SCDex from "#/SCDex-lite.webp";
 
 export const logos = {
@@ -20,7 +20,7 @@ export const logos = {
   srt: SRT,
   trinity: Trinity,
   valkyrie: Valkyrie,
-  suicaodex: SuicaoDex,
+  mangahat: MangaHat,
   scdex: SCDex,
 };
 

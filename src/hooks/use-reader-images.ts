@@ -4,7 +4,7 @@
  * `useReaderImages` - loads reader images via XHR and manages blob URLs.
  *
  * From weebdex-reader:
- * - Dark đa MAX_PARALLEL XHR đồng thời
+ * - Runs up to MAX_PARALLEL concurrent XHR requests
  * - Priority queue: current page first, then expand outward
  * - Auto retry max MAX_ATTEMPTS times, 3s delay each
  * - Returns blob URL; releases URL when unmounted
@@ -24,7 +24,7 @@ const MAX_ATTEMPTS = 3;
 const RETRY_DELAY_MS = 3000;
 
 /** Set NEXT_PUBLIC_IMAGE_PROXY_URL in .env.development if got CORS issue*/
-// TODO: fix CORS issue in suicaodex-api
+// TODO: fix CORS issue in mangahat-api
 const IMAGE_PROXY = process.env.NEXT_PUBLIC_IMAGE_PROXY_URL ?? "";
 
 export function useReaderImages(images: string[], currentIndex: number) {

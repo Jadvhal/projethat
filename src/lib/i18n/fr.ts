@@ -268,7 +268,7 @@ export const fr: TranslationKeys = {
         clearAll: "Tout effacer",
     },
     site: {
-        description: "SuicaoDex - Application de lecture de manga",
+        description: "MangaHat - Application de lecture de manga",
         manifestDescription: "Application de lecture de manga",
         pageWanderedOff: "Cette page s'est égarée",
     },

@@ -18,7 +18,7 @@ export default function Gacha() {
         <div className="relative z-10 text-center max-w-3xl mx-auto">
           <div className="inline-block animate-float">
             <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 dark:bg-indigo-500/30 text-sm font-medium mb-3">
-              SuicaoDex88 - The leading gacha house in VN
+              MangaHat - The ultimate gacha simulator
             </span>
           </div>
 

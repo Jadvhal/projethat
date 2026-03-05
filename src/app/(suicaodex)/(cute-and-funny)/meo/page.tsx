@@ -17,8 +17,8 @@ export async function generateMetadata({
     title:
       page === 1
         ? "Cats"
-        : `Trang ${page} - Cats`,
-    keywords: ["Cats", "Cats", "Car", "SuicaoDex"],
+        : `Page ${page} - Cats`,
+    keywords: ["Cats", "Cats", "Car", "MangaHat"],
   };
 }
 
