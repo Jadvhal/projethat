@@ -25,6 +25,7 @@ export function SiteHeader() {
       <div className="container-wrapper">
         <div className="flex h-12 items-center justify-between">
           <div className="flex items-center gap-2">
+            <SidebarTrigger className="w-8 h-8 bg-muted/50 shadow-xs" />
             <MainNav />
           </div>
           {/* <MobileNav /> */}
@@ -33,7 +34,6 @@ export function SiteHeader() {
 
             <nav className="flex items-center gap-2">
               <ModeSwitcher />
-              <SidebarTrigger className="w-8 h-8 bg-muted/50 shadow-xs" />
             </nav>
           </div>
         </div>
