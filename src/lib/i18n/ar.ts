@@ -20,7 +20,7 @@ export const ar: TranslationKeys = {
         shortcuts: "اختصارات",
         feedbackReport: "ملاحظات/إبلاغ",
         youreNotLoggedIn: "لم تسجل الدخول",
-        weebdex: "WeebDex",
+        weebdex: "MangaHat",
         aboutUs: "من نحن",
         announcements: "إعلانات",
         guidelines: "إرشادات",

@@ -19,7 +19,7 @@ export const en = {
     shortcuts: "Shortcuts",
     feedbackReport: "Feedback/Report",
     youreNotLoggedIn: "You're not logged in",
-    weebdex: "WeebDex",
+    weebdex: "MangaHat",
     aboutUs: "About Us",
     announcements: "Announcements",
     guidelines: "Guidelines",

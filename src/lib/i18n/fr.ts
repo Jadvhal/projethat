@@ -20,7 +20,7 @@ export const fr: TranslationKeys = {
         shortcuts: "Raccourcis",
         feedbackReport: "Commentaires/Signalement",
         youreNotLoggedIn: "Vous n'êtes pas connecté",
-        weebdex: "WeebDex",
+        weebdex: "MangaHat",
         aboutUs: "À propos",
         announcements: "Annonces",
         guidelines: "Règles",
