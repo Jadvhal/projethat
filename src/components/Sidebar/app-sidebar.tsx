@@ -11,6 +11,18 @@ import {
   Shield,
   FileText,
   Users,
+  Library,
+  History,
+  Search,
+  Clock,
+  Sparkles,
+  Tags,
+  Shuffle,
+  MessageSquare,
+  UsersRound,
+  User,
+  Gift,
+  Cat,
 } from "lucide-react";
 
 import {
@@ -45,10 +57,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           {
             title: t.nav.myLibrary,
             url: "/my-library",
+            icon: Library,
           },
           {
             title: t.nav.readingHistory,
             url: "/history",
+            icon: History,
           },
         ],
       },
@@ -61,22 +75,27 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           {
             title: t.nav.advancedSearch,
             url: "/advanced-search",
+            icon: Search,
           },
           {
             title: t.nav.latestUpdates,
             url: "/latest",
+            icon: Clock,
           },
           {
             title: t.nav.newManga,
             url: "/recent",
+            icon: Sparkles,
           },
           {
             title: t.nav.genres,
             url: "/tag",
+            icon: Tags,
           },
           {
             title: t.nav.randomManga,
             url: "/random",
+            icon: Shuffle,
           },
         ],
       },
@@ -88,14 +107,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           {
             title: t.nav.forum,
             url: "https://github.com/Jadvhal/projethat/discussions",
+            icon: MessageSquare,
           },
           {
             title: t.nav.scanlationGroups,
             url: "/groups",
+            icon: UsersRound,
           },
           {
             title: t.nav.users,
             url: "/users",
+            icon: User,
           },
         ],
       },
@@ -107,10 +129,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           {
             title: t.nav.gacha,
             url: "/gacha",
+            icon: Gift,
           },
           {
             title: t.nav.cats,
             url: "/meo",
+            icon: Cat,
           },
         ],
       },

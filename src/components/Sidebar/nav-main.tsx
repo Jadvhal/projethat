@@ -34,6 +34,7 @@ export function NavMain({
     items?: {
       title: string;
       url: string;
+      icon?: LucideIcon;
       isTheme?: boolean;
       isR18?: boolean;
     }[];
@@ -79,7 +80,8 @@ export function NavMain({
                         <ThemeCustomizer />
                       ) : (
                         <SidebarMenuSubButton asChild>
-                          <NoPrefetchLink href={subItem.url}>
+                          <NoPrefetchLink href={subItem.url} className="flex flex-row items-center justify-start gap-2">
+                            {subItem.icon && <subItem.icon />}
                             <span>{subItem.title}</span>
                           </NoPrefetchLink>
                         </SidebarMenuSubButton>
