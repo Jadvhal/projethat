@@ -18,7 +18,7 @@ export function SiteHeader() {
         "top-0 z-50 w-full transform transition-all duration-300",
         !pathname.includes("/chapter") && "sticky",
         !!pathname.includes("/chapter") && !!readerHeader && "sticky",
-        "px-4 md:px-8 lg:px-12",
+        "ps-1 pe-4 md:ps-2 md:pe-8 lg:ps-2 lg:pe-12",
         "bg-background/95 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 border-b border-border/40"
       )}
     >
